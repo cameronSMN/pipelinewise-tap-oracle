@@ -52,7 +52,7 @@ FLOAT_TYPES = set([
 ])
 
 REQUIRED_CONFIG_KEYS = [
-    'sid',
+    'service_name',
     'host',
     'port',
     'user',
@@ -541,7 +541,7 @@ def main_impl():
                   'password': args.config['password'],
                   'host': args.config['host'],
                   'port': args.config['port'],
-                  'sid':  args.config['sid']}
+                  'service_name':  args.config['service_name']}
 
 
    if args.discover:
